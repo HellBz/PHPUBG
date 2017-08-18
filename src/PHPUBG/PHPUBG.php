@@ -17,11 +17,12 @@ class PHPUBG {
 
     /**
      * Queries the API
+     * @param String
      * @return Guzzle Response
      */
-    public function get()
+    private function get($url)
     {
-        return $this->guzzle->request('GET', $this->pubgURL, [
+        return $this->guzzle->request('GET', $url, [
             "headers" => [
                 "TRN-Api-Key" => $this->apiToken
             ]
@@ -34,8 +35,9 @@ class PHPUBG {
      * @param Guzzle Response
      * @return Array
      */
-    public function readBody($guzzleResponse)
+    public function getFullBody($guzzleResponse)
     {
-        return json_decode($guzzleResponse->getBody(), true);
+        $guzReq = $this->get($this->pubgURL);
+        return json_decode($guzReq->getBody(), true);
     }
 }
