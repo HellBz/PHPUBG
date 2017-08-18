@@ -16,7 +16,8 @@ class PHPUBG {
     }
 
     /**
-     *
+     * Queries the API
+     * @return Guzzle Response
      */
     public function get()
     {
@@ -29,6 +30,7 @@ class PHPUBG {
 
     /**
      * Takes a guzzle response, gets the body, and converts it to an array
+     * This returns all of the API's results
      * @param Guzzle Response
      * @return Array
      */

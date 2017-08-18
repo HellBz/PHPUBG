@@ -1,6 +1,6 @@
 # PHPUBG
 
-This is a PHP wrapper for the PUBG Tracker API. 
+This is a PHP wrapper for the PUBG Tracker API.
 
 ## Installation
 
@@ -14,13 +14,13 @@ And then add the following to any file you wish to run it in:
 
 ## Usage
 
-Instantiate the object, and pass in your API token and a steam nickname:
+Instantiate the object, and pass in your API token and a Steam nickname:
 
 `$pubg = new PHPUBG($apiToken, $nickname);`
 
 To make a request:
 
-`$r = $pubg->get();`
-`$pubg->readBody($r);`
+```$r = $pubg->get();
+$pubg->readBody($r);```
 
 `readBody()` will return an array containing all of the API's data.
