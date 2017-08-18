@@ -1,0 +1,22 @@
+{
+    "name": "cbacon/phppubg",
+    "type": "library",
+    "description": "A simple wrapper for the PUBG API",
+    "require": {
+        "php": "^5.3.3",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christopher Bacon",
+            "email": "chrisbacon2009@hotmail.com",
+            "homepage": "http://chris-bacon.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PHPUBG\\": "src/PHPUBG/"
+        }
+    }
+}
