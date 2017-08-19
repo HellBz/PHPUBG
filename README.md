@@ -6,7 +6,7 @@ This is a PHP wrapper for the PUBG Tracker API.
 
 To install:
 
-`composer require cbacon/phpubg`
+`composer require chris-bacon/phpubg`
 
 And then add the following to any file you wish to run it in:
 
