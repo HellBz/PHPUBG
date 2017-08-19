@@ -1,5 +1,5 @@
 {
-    "name": "chris-bacon/phppubg",
+    "name": "chris-bacon/phpubg",
     "type": "library",
     "description": "A simple wrapper for the PUBG API",
     "require": {
