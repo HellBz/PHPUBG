@@ -20,7 +20,6 @@ Instantiate the object, and pass in your API token and a Steam nickname:
 
 To make a request:
 
-`$r = $pubg->get();`
 `$pubg->getFullBody($r);`
 
 `getFullBody()` will return an array containing all of the API's data.
